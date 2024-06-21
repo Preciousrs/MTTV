@@ -1,0 +1,1965 @@
+INFO - 06/07/24 19:29:02 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 0
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 19:29:02 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:29:03 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:29:03 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:29:03 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:29:05 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:29:05 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:29:05 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:29:07 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 19:29:07 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 19:29:07 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp6gclui0q
+INFO - 06/07/24 19:29:09 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 19:40:53 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 19:40:53 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:40:56 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:40:56 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:40:57 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:41:02 - 0:00:09 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:41:02 - 0:00:09 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:41:02 - 0:00:09 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:41:04 - 0:00:11 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 19:41:04 - 0:00:11 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 19:41:04 - 0:00:11 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpqq5yq3pk
+INFO - 06/07/24 19:41:07 - 0:00:14 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 19:41:11 - 0:00:18 - Training..
+INFO - 06/07/24 19:41:11 - 0:00:18 - Epoch	1
+INFO - 06/07/24 19:50:25 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 19:50:25 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:50:27 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:50:27 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:50:27 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:50:29 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:50:29 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:50:29 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:50:32 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 19:50:32 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 19:50:32 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpc0u24ln_
+INFO - 06/07/24 19:50:35 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 19:50:38 - 0:00:13 - Training..
+INFO - 06/07/24 19:50:38 - 0:00:13 - Epoch	1
+INFO - 06/07/24 19:59:53 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 19:59:53 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:59:55 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:59:55 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:59:55 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:59:57 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 19:59:57 - 0:00:05 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 19:59:58 - 0:00:05 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 19:59:59 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 19:59:59 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 19:59:59 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp_xpozgj7
+INFO - 06/07/24 20:00:02 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:00:06 - 0:00:13 - Training..
+INFO - 06/07/24 20:00:06 - 0:00:13 - Epoch	1
+INFO - 06/07/24 20:05:43 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:05:43 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:05:45 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:05:45 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:05:46 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:05:47 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:05:47 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:05:48 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:05:51 - 0:00:08 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:05:51 - 0:00:08 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:05:51 - 0:00:08 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp2o1yaajf
+INFO - 06/07/24 20:05:54 - 0:00:11 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:05:57 - 0:00:14 - Training..
+INFO - 06/07/24 20:05:57 - 0:00:14 - Epoch	1
+INFO - 06/07/24 20:12:31 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:12:31 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:12:34 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:12:34 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:12:35 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:12:38 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:12:38 - 0:00:07 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:12:38 - 0:00:08 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:12:48 - 0:00:17 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:12:48 - 0:00:17 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:12:48 - 0:00:17 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpzg8urhlc
+INFO - 06/07/24 20:12:51 - 0:00:20 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:12:54 - 0:00:23 - Training..
+INFO - 06/07/24 20:12:54 - 0:00:23 - Epoch	1
+INFO - 06/07/24 20:14:25 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:14:25 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:14:26 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:14:26 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:14:26 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:14:28 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:14:28 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:14:29 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:14:29 - 0:00:04 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:14:29 - 0:00:04 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmps9qjbyae
+INFO - 06/07/24 20:14:32 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:14:35 - 0:00:09 - Training..
+INFO - 06/07/24 20:14:35 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:18:27 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:18:27 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:18:28 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:18:28 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:18:29 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:18:35 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:18:35 - 0:00:07 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:18:35 - 0:00:08 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:18:36 - 0:00:09 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:18:36 - 0:00:09 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:18:36 - 0:00:09 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmperajfskd
+INFO - 06/07/24 20:18:40 - 0:00:13 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:18:47 - 0:00:19 - Training..
+INFO - 06/07/24 20:18:47 - 0:00:19 - Epoch	1
+INFO - 06/07/24 20:25:36 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:25:36 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:25:39 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:25:39 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:25:39 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:25:44 - 0:00:08 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:25:44 - 0:00:08 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:25:45 - 0:00:08 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:25:48 - 0:00:12 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:25:48 - 0:00:12 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:25:48 - 0:00:12 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpo6ug8ji6
+INFO - 06/07/24 20:25:51 - 0:00:15 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:26:32 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:26:32 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:26:39 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:26:39 - 0:00:07 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:26:39 - 0:00:08 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:26:41 - 0:00:09 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:26:41 - 0:00:09 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:26:41 - 0:00:10 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:26:42 - 0:00:10 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:26:42 - 0:00:10 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpjea2hicp
+INFO - 06/07/24 20:26:45 - 0:00:13 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:26:48 - 0:00:16 - Training..
+INFO - 06/07/24 20:26:48 - 0:00:16 - Epoch	1
+INFO - 06/07/24 20:27:43 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:27:43 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:27:47 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:27:47 - 0:00:05 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:27:48 - 0:00:05 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:27:49 - 0:00:06 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:27:49 - 0:00:06 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:27:49 - 0:00:07 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:27:52 - 0:00:09 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:27:52 - 0:00:09 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:27:52 - 0:00:09 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmps0n41373
+INFO - 06/07/24 20:27:55 - 0:00:12 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:27:58 - 0:00:15 - Training..
+INFO - 06/07/24 20:27:58 - 0:00:15 - Epoch	1
+INFO - 06/07/24 20:35:33 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:35:33 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:35:37 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:35:37 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:35:37 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:35:41 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:35:41 - 0:00:07 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:35:41 - 0:00:08 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:35:42 - 0:00:09 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:35:42 - 0:00:09 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:35:42 - 0:00:09 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpldtuapda
+INFO - 06/07/24 20:35:45 - 0:00:12 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:35:48 - 0:00:15 - Training..
+INFO - 06/07/24 20:35:48 - 0:00:15 - Epoch	1
+INFO - 06/07/24 20:39:45 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:39:45 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:39:46 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:39:46 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:39:47 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:39:47 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:39:48 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:39:48 - 0:00:03 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:39:48 - 0:00:03 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmprlqmlj14
+INFO - 06/07/24 20:39:51 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:39:55 - 0:00:09 - Training..
+INFO - 06/07/24 20:39:55 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:41:58 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:41:58 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:41:59 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:41:59 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:41:59 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:42:00 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:42:00 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:42:01 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:42:01 - 0:00:03 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:42:01 - 0:00:03 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpw15282z4
+INFO - 06/07/24 20:42:04 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:42:07 - 0:00:09 - Training..
+INFO - 06/07/24 20:42:07 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:45:27 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:45:27 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:45:28 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:45:28 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:45:28 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:45:29 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:45:29 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:45:30 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:45:30 - 0:00:03 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:45:30 - 0:00:03 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmphs9zsp_9
+INFO - 06/07/24 20:45:33 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:45:36 - 0:00:09 - Training..
+INFO - 06/07/24 20:45:36 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:49:11 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:49:11 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:49:11 - 0:00:00 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:49:11 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:49:12 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:49:13 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:49:13 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:49:13 - 0:00:03 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:49:13 - 0:00:03 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpyhrh793m
+INFO - 06/07/24 20:49:16 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:49:19 - 0:00:09 - Training..
+INFO - 06/07/24 20:49:19 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:53:23 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:53:23 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:53:24 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:53:24 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:53:24 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:53:24 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:53:25 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:53:25 - 0:00:02 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:53:25 - 0:00:02 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpmhkgq7ne
+INFO - 06/07/24 20:53:28 - 0:00:05 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:53:31 - 0:00:08 - Training..
+INFO - 06/07/24 20:53:31 - 0:00:08 - Epoch	1
+INFO - 06/07/24 20:57:22 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:57:22 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:57:23 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:57:23 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:57:23 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:57:24 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:57:24 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:57:25 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:57:26 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:57:26 - 0:00:04 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:57:26 - 0:00:04 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpi30g0pf1
+INFO - 06/07/24 20:57:29 - 0:00:07 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:57:55 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:57:55 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:57:55 - 0:00:00 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:57:56 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:57:57 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:57:57 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:57:57 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:57:58 - 0:00:03 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:57:58 - 0:00:03 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp65vuevec
+INFO - 06/07/24 20:58:01 - 0:00:06 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:58:04 - 0:00:09 - Training..
+INFO - 06/07/24 20:58:04 - 0:00:09 - Epoch	1
+INFO - 06/07/24 20:58:55 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/07/24 20:58:55 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:58:56 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/07/24 20:58:56 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:58:56 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+INFO - 06/07/24 20:58:57 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/07/24 20:58:57 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/07/24 20:58:58 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/07/24 20:58:59 - 0:00:04 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/07/24 20:58:59 - 0:00:04 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp610u4qv5
+INFO - 06/07/24 20:59:02 - 0:00:07 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/07/24 20:59:05 - 0:00:10 - Training..
+INFO - 06/07/24 20:59:05 - 0:00:10 - Epoch	1
+INFO - 06/08/24 16:17:58 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/08/24 16:17:58 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:00 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:00 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:18:00 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:01 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:01 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:18:02 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:06 - 0:00:08 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:06 - 0:00:08 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/08/24 16:18:06 - 0:00:08 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpwc002tj_
+INFO - 06/08/24 16:18:09 - 0:00:11 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/08/24 16:18:12 - 0:00:15 - Training..
+INFO - 06/08/24 16:18:12 - 0:00:15 - Epoch	1
+INFO - 06/08/24 16:18:36 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/08/24 16:18:36 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:37 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:37 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:18:38 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:41 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:41 - 0:00:05 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:18:41 - 0:00:05 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:18:43 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/08/24 16:18:43 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/08/24 16:18:43 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp6jckp1t3
+INFO - 06/08/24 16:18:47 - 0:00:11 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/08/24 16:18:50 - 0:00:14 - Training..
+INFO - 06/08/24 16:18:50 - 0:00:14 - Epoch	1
+INFO - 06/08/24 16:24:50 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/08/24 16:24:50 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:24:51 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:24:51 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:24:52 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:24:54 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:24:54 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:24:54 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:24:57 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/08/24 16:24:57 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/08/24 16:24:57 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpxnbuvwqy
+INFO - 06/08/24 16:25:00 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/08/24 16:25:03 - 0:00:14 - Training..
+INFO - 06/08/24 16:25:03 - 0:00:14 - Epoch	1
+INFO - 06/08/24 16:26:18 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/08/24 16:26:18 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:26:20 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:26:20 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:26:20 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:26:23 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/08/24 16:26:23 - 0:00:05 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/08/24 16:26:23 - 0:00:05 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/08/24 16:26:25 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/08/24 16:26:25 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/08/24 16:26:25 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp4w49vhtg
+INFO - 06/08/24 16:26:28 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/08/24 16:26:31 - 0:00:14 - Training..
+INFO - 06/08/24 16:26:31 - 0:00:14 - Epoch	1
+INFO - 06/09/24 13:29:14 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 13:29:14 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:29:15 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:29:15 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:29:16 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:29:17 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:29:17 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:29:17 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:29:19 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 13:29:19 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 13:29:19 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp2d9f85nd
+INFO - 06/09/24 13:29:22 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 13:29:26 - 0:00:12 - Training..
+INFO - 06/09/24 13:29:26 - 0:00:12 - Epoch	1
+INFO - 06/09/24 13:32:53 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 13:32:53 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:32:54 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:32:54 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:32:54 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:32:56 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:32:56 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:32:56 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:32:57 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 13:32:57 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 13:32:57 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmphzio9k_4
+INFO - 06/09/24 13:33:00 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 13:33:04 - 0:00:12 - Training..
+INFO - 06/09/24 13:33:04 - 0:00:12 - Epoch	1
+INFO - 06/09/24 13:43:40 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 13:43:40 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:43:41 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:43:41 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:43:41 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:43:43 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 13:43:43 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 13:43:44 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 13:43:45 - 0:00:06 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 13:43:45 - 0:00:06 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 13:43:45 - 0:00:06 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpafgr7hqq
+INFO - 06/09/24 13:43:48 - 0:00:09 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 13:43:53 - 0:00:13 - Training..
+INFO - 06/09/24 13:43:53 - 0:00:13 - Epoch	1
+INFO - 06/09/24 14:05:24 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:05:24 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:05:26 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:05:26 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:05:26 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:05:28 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:05:28 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:05:28 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:05:29 - 0:00:06 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:05:29 - 0:00:06 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:05:29 - 0:00:06 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp_3ze4hyg
+INFO - 06/09/24 14:05:33 - 0:00:09 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:05:37 - 0:00:13 - Training..
+INFO - 06/09/24 14:05:37 - 0:00:13 - Epoch	1
+INFO - 06/09/24 14:07:34 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:07:34 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:07:36 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:07:36 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:07:37 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:07:38 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:07:38 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:07:38 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:07:40 - 0:00:06 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:07:40 - 0:00:06 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:07:40 - 0:00:06 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpa0odw7jn
+INFO - 06/09/24 14:07:44 - 0:00:09 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:07:48 - 0:00:14 - Training..
+INFO - 06/09/24 14:07:48 - 0:00:14 - Epoch	1
+INFO - 06/09/24 14:24:06 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:24:06 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:24:07 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:24:07 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:24:08 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:24:09 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:24:09 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:24:09 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:24:11 - 0:00:06 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:24:11 - 0:00:06 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:24:11 - 0:00:06 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpbnnjm6_l
+INFO - 06/09/24 14:24:15 - 0:00:09 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:24:19 - 0:00:13 - Training..
+INFO - 06/09/24 14:24:19 - 0:00:13 - Epoch	1
+INFO - 06/09/24 14:34:42 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:34:42 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:34:43 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:34:43 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:34:43 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:34:45 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:34:45 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:34:45 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:34:47 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:34:47 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:34:47 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpdf_a2jrn
+INFO - 06/09/24 14:34:50 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:34:54 - 0:00:13 - Training..
+INFO - 06/09/24 14:34:54 - 0:00:13 - Epoch	1
+INFO - 06/09/24 14:37:01 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 25
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:37:01 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:37:03 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:37:03 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:37:03 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:37:04 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:37:04 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:37:05 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:37:06 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:37:06 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:37:06 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpdc764oo8
+INFO - 06/09/24 14:37:09 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:37:13 - 0:00:11 - Training..
+INFO - 06/09/24 14:37:13 - 0:00:11 - Epoch	1
+INFO - 06/09/24 14:50:12 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:50:12 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:13 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:13 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:50:14 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:15 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:15 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:50:15 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:17 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:17 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:50:17 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpzvzn1jsx
+INFO - 06/09/24 14:50:49 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/gossip
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_2_way
+                                     num_image_embeds: 20
+                                     patience: 10
+                                     region_image_embeds: 20
+                                     savedir: ./save_no_g/fakeddit_2_way
+                                     seed: 1
+                                     task: v3-1_style_based_fake
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/09/24 14:50:49 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:50 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:50 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:50:50 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:52 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:52 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/09/24 14:50:52 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/09/24 14:50:54 - 0:00:05 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/09/24 14:50:54 - 0:00:05 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/09/24 14:50:54 - 0:00:05 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmp0jxqpxvw
+INFO - 06/09/24 14:50:57 - 0:00:08 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/09/24 14:51:00 - 0:00:12 - Training..
+INFO - 06/09/24 14:51:00 - 0:00:12 - Epoch	1
+INFO - 06/09/24 14:54:16 - 0:03:27 - Train Loss: 0.0225
+INFO - 06/09/24 14:54:16 - 0:03:27 - Val: Loss: 0.26133 | Acc: 0.89923
+INFO - 06/09/24 14:54:56 - 0:04:07 - Test: Loss: 0.29121 | Acc: 0.88328
+INFO - 06/09/24 14:54:58 - 0:04:09 - Epoch	2
+INFO - 06/09/24 14:58:13 - 0:07:25 - Train Loss: 0.0122
+INFO - 06/09/24 14:58:13 - 0:07:25 - Val: Loss: 0.12711 | Acc: 0.95872
+INFO - 06/09/24 14:58:54 - 0:08:05 - Test: Loss: 0.22354 | Acc: 0.91171
+INFO - 06/09/24 14:59:00 - 0:08:12 - Epoch	3
+INFO - 06/09/24 15:02:16 - 0:11:27 - Train Loss: 0.0070
+INFO - 06/09/24 15:02:16 - 0:11:27 - Val: Loss: 0.06983 | Acc: 0.97718
+INFO - 06/09/24 15:02:57 - 0:12:08 - Test: Loss: 0.29001 | Acc: 0.89405
+INFO - 06/09/24 15:02:58 - 0:12:09 - Epoch	4
+INFO - 06/09/24 15:06:14 - 0:15:25 - Train Loss: 0.0034
+INFO - 06/09/24 15:06:14 - 0:15:25 - Val: Loss: 0.02197 | Acc: 0.99256
+INFO - 06/09/24 15:06:54 - 0:16:05 - Test: Loss: 0.33421 | Acc: 0.90906
+INFO - 06/09/24 15:06:55 - 0:16:06 - Epoch	5
+INFO - 06/09/24 15:10:10 - 0:19:21 - Train Loss: 0.0015
+INFO - 06/09/24 15:10:10 - 0:19:21 - Val: Loss: 0.01182 | Acc: 0.99615
+INFO - 06/09/24 15:10:50 - 0:20:02 - Test: Loss: 0.32797 | Acc: 0.91683
+INFO - 06/09/24 15:10:57 - 0:20:08 - Epoch	6
+INFO - 06/09/24 15:14:14 - 0:23:25 - Train Loss: 0.0008
+INFO - 06/09/24 15:14:14 - 0:23:25 - Val: Loss: 0.01368 | Acc: 0.99590
+INFO - 06/09/24 15:14:55 - 0:24:06 - Test: Loss: 0.39071 | Acc: 0.91012
+INFO - 06/09/24 15:14:56 - 0:24:08 - Epoch	7
+INFO - 06/09/24 15:21:53 - 0:31:04 - Train Loss: 0.0007
+INFO - 06/09/24 15:21:53 - 0:31:04 - Val: Loss: 0.00672 | Acc: 0.99692
+INFO - 06/09/24 15:23:25 - 0:32:37 - Test: Loss: 0.43163 | Acc: 0.91330
+INFO - 06/09/24 15:23:27 - 0:32:38 - Epoch	8
+INFO - 06/09/24 15:26:44 - 0:35:55 - Train Loss: 0.0005
+INFO - 06/09/24 15:26:44 - 0:35:55 - Val: Loss: 0.00766 | Acc: 0.99590
+INFO - 06/09/24 15:27:25 - 0:36:36 - Test: Loss: 0.45692 | Acc: 0.91612
+INFO - 06/09/24 15:27:27 - 0:36:38 - Epoch	9
+INFO - 06/09/24 15:30:41 - 0:39:53 - Train Loss: 0.0003
+INFO - 06/09/24 15:30:41 - 0:39:53 - Val: Loss: 0.00664 | Acc: 0.99641
+INFO - 06/09/24 15:31:20 - 0:40:31 - Test: Loss: 0.47281 | Acc: 0.91330
+INFO - 06/09/24 15:31:22 - 0:40:33 - Epoch	10
+INFO - 06/09/24 15:34:35 - 0:43:46 - Train Loss: 0.0003
+INFO - 06/09/24 15:34:35 - 0:43:46 - Val: Loss: 0.00589 | Acc: 0.99692
+INFO - 06/09/24 15:35:16 - 0:44:27 - Test: Loss: 0.49307 | Acc: 0.91065
+INFO - 06/09/24 15:35:17 - 0:44:28 - Epoch	11
+INFO - 06/09/24 15:38:31 - 0:47:42 - Train Loss: 0.0003
+INFO - 06/09/24 15:38:31 - 0:47:42 - Val: Loss: 0.00561 | Acc: 0.99718
+INFO - 06/09/24 15:39:11 - 0:48:22 - Test: Loss: 0.50809 | Acc: 0.91171
+INFO - 06/09/24 15:39:13 - 0:48:24 - Epoch	12
+INFO - 06/09/24 15:42:27 - 0:51:38 - Train Loss: 0.0002
+INFO - 06/09/24 15:42:27 - 0:51:38 - Val: Loss: 0.00577 | Acc: 0.99641
+INFO - 06/09/24 15:43:07 - 0:52:18 - Test: Loss: 0.51526 | Acc: 0.91171
+INFO - 06/09/24 15:43:09 - 0:52:20 - Epoch	13
+INFO - 06/09/24 15:46:23 - 0:55:34 - Train Loss: 0.0003
+INFO - 06/09/24 15:46:23 - 0:55:34 - Val: Loss: 0.00549 | Acc: 0.99692
+INFO - 06/09/24 15:47:03 - 0:56:14 - Test: Loss: 0.51489 | Acc: 0.91453
+INFO - 06/09/24 15:47:04 - 0:56:15 - Epoch	14
+INFO - 06/09/24 15:50:19 - 0:59:31 - Train Loss: 0.0002
+INFO - 06/09/24 15:50:19 - 0:59:31 - Val: Loss: 0.00559 | Acc: 0.99667
+INFO - 06/09/24 15:51:00 - 1:00:11 - Test: Loss: 0.52611 | Acc: 0.91065
+INFO - 06/09/24 15:51:02 - 1:00:13 - Epoch	15
+INFO - 06/09/24 15:54:19 - 1:03:30 - Train Loss: 0.0002
+INFO - 06/09/24 15:54:19 - 1:03:30 - Val: Loss: 0.00559 | Acc: 0.99692
+INFO - 06/09/24 15:55:01 - 1:04:13 - Test: Loss: 0.52837 | Acc: 0.91082
+INFO - 06/09/24 15:55:03 - 1:04:14 - No improvement. Breaking out of loop.

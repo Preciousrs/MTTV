@@ -1,0 +1,491 @@
+INFO - 06/10/24 13:29:45 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-chinese
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 1
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 30
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/10/24 13:29:45 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/10/24 13:29:46 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese-vocab.txt HTTP/1.1" 200 0
+INFO - 06/10/24 13:29:46 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+DEBUG - 06/10/24 13:29:46 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/10/24 13:29:48 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese-vocab.txt HTTP/1.1" 200 0
+INFO - 06/10/24 13:29:48 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+DEBUG - 06/10/24 13:29:48 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/10/24 13:29:49 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese.tar.gz HTTP/1.1" 200 0
+INFO - 06/10/24 13:29:49 - 0:00:04 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f
+INFO - 06/10/24 13:29:49 - 0:00:04 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f to temp dir /tmp/tmpdr8b2fzu
+INFO - 06/10/24 14:15:12 - 0:00:00 - batch_sz: 32
+                                     bert_model: MTTV/bert-base-chinese
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 1
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 30
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+ERROR - 06/10/24 14:15:12 - 0:00:00 - Model name 'MTTV/bert-base-chinese' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed 'MTTV/bert-base-chinese' was a path or url but couldn't find any file associated to this path or url.
+INFO - 06/10/24 14:16:29 - 0:00:00 - batch_sz: 32
+                                     bert_model: MTTV/bert-base-chinese/
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 1
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 30
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+ERROR - 06/10/24 14:16:29 - 0:00:00 - Model name 'MTTV/bert-base-chinese/' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed 'MTTV/bert-base-chinese/' was a path or url but couldn't find any file associated to this path or url.
+INFO - 06/10/24 14:16:45 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-chinese/
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 1
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 30
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+INFO - 06/10/24 14:16:45 - 0:00:00 - loading vocabulary file bert-base-chinese/vocab.txt
+INFO - 06/10/24 14:16:45 - 0:00:00 - loading vocabulary file bert-base-chinese/vocab.txt
+INFO - 06/10/24 14:16:45 - 0:00:00 - loading archive file bert-base-chinese/
+INFO - 06/10/24 14:16:45 - 0:00:00 - Model config {
+                                       "architectures": [
+                                         "BertForMaskedLM"
+                                       ],
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "directionality": "bidi",
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "layer_norm_eps": 1e-12,
+                                       "max_position_embeddings": 512,
+                                       "model_type": "bert",
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "pad_token_id": 0,
+                                       "pooler_fc_size": 768,
+                                       "pooler_num_attention_heads": 12,
+                                       "pooler_num_fc_layers": 3,
+                                       "pooler_size_per_head": 128,
+                                       "pooler_type": "first_token_transform",
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 21128
+                                     }
+                                     
+INFO - 06/10/24 14:16:48 - 0:00:03 - Training..
+INFO - 06/10/24 14:16:48 - 0:00:03 - Epoch	1
+INFO - 06/10/24 14:19:21 - 0:02:36 - Train Loss: 0.3177
+INFO - 06/10/24 14:19:21 - 0:02:36 - Val: Loss: 0.25804 | Acc: 0.90024
+INFO - 06/10/24 14:19:28 - 0:02:43 - Test: Loss: 0.45094 | Acc: 0.79603
+INFO - 06/10/24 14:19:30 - 0:02:45 - Epoch	2
+INFO - 06/10/24 14:20:04 - 0:03:19 - Train Loss: 0.1355
+INFO - 06/10/24 14:20:04 - 0:03:19 - Val: Loss: 0.19027 | Acc: 0.94161
+INFO - 06/10/24 14:20:07 - 0:03:22 - Test: Loss: 0.42980 | Acc: 0.85560
+INFO - 06/10/24 14:20:12 - 0:03:27 - Epoch	3
+INFO - 06/10/24 14:20:45 - 0:04:00 - Train Loss: 0.0834
+INFO - 06/10/24 14:20:45 - 0:04:00 - Val: Loss: 0.12578 | Acc: 0.95620
+INFO - 06/10/24 14:20:48 - 0:04:04 - Test: Loss: 0.31085 | Acc: 0.87726
+INFO - 06/10/24 14:20:54 - 0:04:09 - Epoch	4
+INFO - 06/10/24 14:21:28 - 0:04:43 - Train Loss: 0.0710
+INFO - 06/10/24 14:21:28 - 0:04:43 - Val: Loss: 0.16170 | Acc: 0.94161
+INFO - 06/10/24 14:21:31 - 0:04:46 - Test: Loss: 0.38438 | Acc: 0.87816
+INFO - 06/10/24 14:21:36 - 0:04:51 - Epoch	5
+INFO - 06/10/24 14:22:09 - 0:05:25 - Train Loss: 0.0256
+INFO - 06/10/24 14:22:09 - 0:05:25 - Val: Loss: 0.18169 | Acc: 0.95377
+INFO - 06/10/24 14:22:13 - 0:05:28 - Test: Loss: 0.53107 | Acc: 0.85921
+INFO - 06/10/24 14:22:14 - 0:05:29 - Epoch	6
+INFO - 06/10/24 14:22:47 - 0:06:02 - Train Loss: 0.0248
+INFO - 06/10/24 14:22:47 - 0:06:02 - Val: Loss: 0.16958 | Acc: 0.95134
+INFO - 06/10/24 14:22:50 - 0:06:05 - Test: Loss: 0.41128 | Acc: 0.87906
+INFO - 06/10/24 14:22:56 - 0:06:11 - Epoch	7
+INFO - 06/10/24 14:23:30 - 0:06:45 - Train Loss: 0.0037
+INFO - 06/10/24 14:23:30 - 0:06:45 - Val: Loss: 0.19591 | Acc: 0.95864
+INFO - 06/10/24 14:23:33 - 0:06:48 - Test: Loss: 0.56145 | Acc: 0.87455
+INFO - 06/10/24 14:23:34 - 0:06:49 - Epoch	8
+INFO - 06/10/24 14:24:08 - 0:07:23 - Train Loss: 0.0002
+INFO - 06/10/24 14:24:08 - 0:07:23 - Val: Loss: 0.20678 | Acc: 0.95620
+INFO - 06/10/24 14:24:11 - 0:07:26 - Test: Loss: 0.65023 | Acc: 0.87455
+INFO - 06/10/24 14:24:12 - 0:07:27 - Epoch	9
+INFO - 06/10/24 14:24:46 - 0:08:01 - Train Loss: 0.0001
+INFO - 06/10/24 14:24:46 - 0:08:01 - Val: Loss: 0.21580 | Acc: 0.95864
+INFO - 06/10/24 14:24:49 - 0:08:04 - Test: Loss: 0.68397 | Acc: 0.87184
+INFO - 06/10/24 14:24:50 - 0:08:05 - Epoch	10
+INFO - 06/10/24 14:25:24 - 0:08:39 - Train Loss: 0.0001
+INFO - 06/10/24 14:25:24 - 0:08:39 - Val: Loss: 0.21923 | Acc: 0.95864
+INFO - 06/10/24 14:25:27 - 0:08:42 - Test: Loss: 0.69732 | Acc: 0.87094
+INFO - 06/10/24 14:25:28 - 0:08:43 - Epoch	11
+INFO - 06/10/24 14:26:02 - 0:09:17 - Train Loss: 0.0001
+INFO - 06/10/24 14:26:02 - 0:09:17 - Val: Loss: 0.22162 | Acc: 0.95864
+INFO - 06/10/24 14:26:05 - 0:09:20 - Test: Loss: 0.70375 | Acc: 0.87274
+INFO - 06/10/24 14:26:06 - 0:09:21 - Epoch	12
+INFO - 06/10/24 14:26:40 - 0:09:55 - Train Loss: 0.0000
+INFO - 06/10/24 14:26:40 - 0:09:55 - Val: Loss: 0.22453 | Acc: 0.95864
+INFO - 06/10/24 14:26:43 - 0:09:58 - Test: Loss: 0.71443 | Acc: 0.87094
+INFO - 06/10/24 14:26:44 - 0:09:59 - Epoch	13
+INFO - 06/10/24 14:27:18 - 0:10:33 - Train Loss: 0.0000
+INFO - 06/10/24 14:27:18 - 0:10:33 - Val: Loss: 0.22597 | Acc: 0.95864
+INFO - 06/10/24 14:27:21 - 0:10:36 - Test: Loss: 0.71878 | Acc: 0.87094
+INFO - 06/10/24 14:27:22 - 0:10:37 - Epoch	14
+INFO - 06/10/24 14:27:56 - 0:11:11 - Train Loss: 0.0000
+INFO - 06/10/24 14:27:56 - 0:11:11 - Val: Loss: 0.22629 | Acc: 0.95620
+INFO - 06/10/24 14:27:59 - 0:11:14 - Test: Loss: 0.71691 | Acc: 0.87455
+INFO - 06/10/24 14:28:00 - 0:11:15 - Epoch	15
+INFO - 06/10/24 14:28:34 - 0:11:49 - Train Loss: 0.0000
+INFO - 06/10/24 14:28:34 - 0:11:49 - Val: Loss: 0.22744 | Acc: 0.95620
+INFO - 06/10/24 14:28:37 - 0:11:52 - Test: Loss: 0.72065 | Acc: 0.87455
+INFO - 06/10/24 14:28:38 - 0:11:54 - Epoch	16
+INFO - 06/10/24 14:29:12 - 0:12:27 - Train Loss: 0.0000
+INFO - 06/10/24 14:29:12 - 0:12:27 - Val: Loss: 0.22730 | Acc: 0.95620
+INFO - 06/10/24 14:29:15 - 0:12:30 - Test: Loss: 0.71900 | Acc: 0.87545
+INFO - 06/10/24 14:29:17 - 0:12:32 - No improvement. Breaking out of loop.
+INFO - 06/21/24 10:42:37 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/weibo
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:42:37 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:42:40 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:42:40 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO - 06/21/24 10:43:05 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 2_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:43:05 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:43:07 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:43:07 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO - 06/21/24 10:44:03 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:44:03 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:44:05 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:44:05 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/21/24 10:44:05 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:44:07 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:44:07 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/21/24 10:44:07 - 0:00:04 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:44:09 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/21/24 10:44:09 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/21/24 10:44:09 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpxahoy87_
+INFO - 06/21/24 10:44:13 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/21/24 10:44:16 - 0:00:13 - Training..
+INFO - 06/21/24 10:44:16 - 0:00:13 - Epoch	1
+INFO - 06/21/24 10:45:39 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/weibo
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:45:39 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:45:41 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:45:41 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO - 06/21/24 10:49:58 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/weibo
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:49:58 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:50:01 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:50:01 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO - 06/21/24 10:50:12 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 1
+                                     global_image_embeds: 5
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: weibo
+                                     num_image_embeds: 10
+                                     patience: 10
+                                     region_image_embeds: 5
+                                     savedir: ./save_weibo/weibo
+                                     seed: 1
+                                     task: weibo
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/21/24 10:50:12 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:50:14 - 0:00:02 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:50:14 - 0:00:02 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/21/24 10:50:14 - 0:00:02 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:50:16 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/21/24 10:50:16 - 0:00:04 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/21/24 10:50:16 - 0:00:05 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/21/24 10:50:19 - 0:00:07 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/21/24 10:50:19 - 0:00:07 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/21/24 10:50:19 - 0:00:07 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpe2ntq9hq
+INFO - 06/21/24 10:50:22 - 0:00:10 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/21/24 10:50:25 - 0:00:14 - Training..
+INFO - 06/21/24 10:50:25 - 0:00:14 - Epoch	1

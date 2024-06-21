@@ -1,0 +1,122 @@
+INFO - 06/16/24 11:49:51 - 0:00:00 - batch_sz: 32
+                                     bert_model: bert-base-uncased
+                                     data_path: /data/rensisi/HMCAN/MTTV/data/
+                                     drop_img_percent: 0.0
+                                     dropout: 0.1
+                                     embed_sz: 300
+                                     encoder_layer_num: 6
+                                     global_image_embeds: 25
+                                     gradient_accumulation_steps: 20
+                                     hidden: []
+                                     hidden_sz: 768
+                                     img_embed_pool_type: avg
+                                     img_hidden_sz: 2048
+                                     include_bn: True
+                                     label_type: 6_way_label
+                                     load_checkpoint_path: 
+                                     lr: 0.0001
+                                     lr_factor: 0.5
+                                     lr_patience: 2
+                                     max_epochs: 20
+                                     max_seq_len: 128
+                                     model: mttv
+                                     n_workers: 1
+                                     name: fakeddit_6_way
+                                     num_image_embeds: 35
+                                     patience: 10
+                                     region_image_embeds: 10
+                                     savedir: ./save_fakeddit/fakeddit_6_way
+                                     seed: 1
+                                     task: fakeddit
+                                     warmup: 0.1
+                                     weight_classes: 1
+DEBUG - 06/16/24 11:49:51 - 0:00:00 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/16/24 11:49:52 - 0:00:01 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/16/24 11:49:52 - 0:00:01 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/16/24 11:49:52 - 0:00:01 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/16/24 11:49:53 - 0:00:03 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased-vocab.txt HTTP/1.1" 200 0
+INFO - 06/16/24 11:49:53 - 0:00:03 - loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /data/rensisi/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+DEBUG - 06/16/24 11:49:53 - 0:00:03 - Starting new HTTPS connection (1): s3.amazonaws.com:443
+DEBUG - 06/16/24 11:49:55 - 0:00:04 - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-uncased.tar.gz HTTP/1.1" 200 0
+INFO - 06/16/24 11:49:55 - 0:00:04 - loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+INFO - 06/16/24 11:49:55 - 0:00:04 - extracting archive file /data/rensisi/.pytorch_pretrained_bert/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpmvb2pyci
+INFO - 06/16/24 11:49:58 - 0:00:07 - Model config {
+                                       "attention_probs_dropout_prob": 0.1,
+                                       "hidden_act": "gelu",
+                                       "hidden_dropout_prob": 0.1,
+                                       "hidden_size": 768,
+                                       "initializer_range": 0.02,
+                                       "intermediate_size": 3072,
+                                       "max_position_embeddings": 512,
+                                       "num_attention_heads": 12,
+                                       "num_hidden_layers": 12,
+                                       "type_vocab_size": 2,
+                                       "vocab_size": 30522
+                                     }
+                                     
+INFO - 06/16/24 11:50:01 - 0:00:10 - Training..
+INFO - 06/16/24 11:50:01 - 0:00:10 - Epoch	1
+INFO - 06/16/24 11:51:52 - 0:02:01 - Train Loss: 0.0572
+INFO - 06/16/24 11:51:52 - 0:02:01 - Val: Loss: 0.88302 | Acc: 0.69160
+INFO - 06/16/24 11:52:01 - 0:02:10 - Test: Loss: 0.90093 | Acc: 0.68006
+INFO - 06/16/24 11:52:03 - 0:02:12 - Epoch	2
+INFO - 06/16/24 11:53:55 - 0:04:04 - Train Loss: 0.0363
+INFO - 06/16/24 11:53:55 - 0:04:04 - Val: Loss: 0.44785 | Acc: 0.84833
+INFO - 06/16/24 11:54:05 - 0:04:14 - Test: Loss: 0.61406 | Acc: 0.78181
+INFO - 06/16/24 11:54:10 - 0:04:19 - Epoch	3
+INFO - 06/16/24 11:56:02 - 0:06:11 - Train Loss: 0.0220
+INFO - 06/16/24 11:56:02 - 0:06:11 - Val: Loss: 0.25444 | Acc: 0.92201
+INFO - 06/16/24 11:56:11 - 0:06:20 - Test: Loss: 0.62969 | Acc: 0.77121
+INFO - 06/16/24 11:56:12 - 0:06:22 - Epoch	4
+INFO - 06/16/24 11:58:04 - 0:08:13 - Train Loss: 0.0107
+INFO - 06/16/24 11:58:04 - 0:08:13 - Val: Loss: 0.09249 | Acc: 0.97563
+INFO - 06/16/24 11:58:13 - 0:08:22 - Test: Loss: 0.72524 | Acc: 0.77827
+INFO - 06/16/24 11:58:14 - 0:08:24 - Epoch	5
+INFO - 06/16/24 12:00:05 - 0:10:15 - Train Loss: 0.0048
+INFO - 06/16/24 12:00:05 - 0:10:15 - Val: Loss: 0.03112 | Acc: 0.99006
+INFO - 06/16/24 12:00:14 - 0:10:24 - Test: Loss: 0.97434 | Acc: 0.78051
+INFO - 06/16/24 12:00:16 - 0:10:25 - Epoch	6
+INFO - 06/16/24 12:02:07 - 0:12:17 - Train Loss: 0.0020
+INFO - 06/16/24 12:02:07 - 0:12:17 - Val: Loss: 0.00828 | Acc: 0.99831
+INFO - 06/16/24 12:02:17 - 0:12:26 - Test: Loss: 1.01598 | Acc: 0.78832
+INFO - 06/16/24 12:02:22 - 0:12:31 - Epoch	7
+INFO - 06/16/24 12:04:13 - 0:14:23 - Train Loss: 0.0008
+INFO - 06/16/24 12:04:13 - 0:14:23 - Val: Loss: 0.00518 | Acc: 0.99906
+INFO - 06/16/24 12:04:22 - 0:14:32 - Test: Loss: 1.12982 | Acc: 0.77902
+INFO - 06/16/24 12:04:23 - 0:14:33 - Epoch	8
+INFO - 06/16/24 12:06:15 - 0:16:25 - Train Loss: 0.0005
+INFO - 06/16/24 12:06:15 - 0:16:25 - Val: Loss: 0.00294 | Acc: 0.99944
+INFO - 06/16/24 12:06:24 - 0:16:34 - Test: Loss: 1.22182 | Acc: 0.78144
+INFO - 06/16/24 12:06:26 - 0:16:35 - Epoch	9
+INFO - 06/16/24 12:08:17 - 0:18:27 - Train Loss: 0.0003
+INFO - 06/16/24 12:08:17 - 0:18:27 - Val: Loss: 0.00213 | Acc: 0.99963
+INFO - 06/16/24 12:08:27 - 0:18:36 - Test: Loss: 1.26593 | Acc: 0.78144
+INFO - 06/16/24 12:08:28 - 0:18:38 - Epoch	10
+INFO - 06/16/24 12:10:20 - 0:20:29 - Train Loss: 0.0002
+INFO - 06/16/24 12:10:20 - 0:20:29 - Val: Loss: 0.00163 | Acc: 0.99963
+INFO - 06/16/24 12:10:28 - 0:20:38 - Test: Loss: 1.29821 | Acc: 0.78739
+INFO - 06/16/24 12:10:30 - 0:20:39 - Epoch	11
+INFO - 06/16/24 12:12:21 - 0:22:31 - Train Loss: 0.0002
+INFO - 06/16/24 12:12:21 - 0:22:31 - Val: Loss: 0.00150 | Acc: 0.99981
+INFO - 06/16/24 12:12:30 - 0:22:40 - Test: Loss: 1.32285 | Acc: 0.78627
+INFO - 06/16/24 12:12:31 - 0:22:41 - Epoch	12
+INFO - 06/16/24 12:14:23 - 0:24:32 - Train Loss: 0.0002
+INFO - 06/16/24 12:14:23 - 0:24:32 - Val: Loss: 0.00125 | Acc: 0.99981
+INFO - 06/16/24 12:14:32 - 0:24:41 - Test: Loss: 1.33932 | Acc: 0.78218
+INFO - 06/16/24 12:14:33 - 0:24:43 - Epoch	13
+INFO - 06/16/24 12:16:25 - 0:26:35 - Train Loss: 0.0001
+INFO - 06/16/24 12:16:25 - 0:26:35 - Val: Loss: 0.00118 | Acc: 0.99963
+INFO - 06/16/24 12:16:34 - 0:26:44 - Test: Loss: 1.34056 | Acc: 0.78516
+INFO - 06/16/24 12:16:36 - 0:26:45 - Epoch	14
+INFO - 06/16/24 12:18:27 - 0:28:37 - Train Loss: 0.0001
+INFO - 06/16/24 12:18:27 - 0:28:37 - Val: Loss: 0.00110 | Acc: 0.99963
+INFO - 06/16/24 12:18:36 - 0:28:46 - Test: Loss: 1.34497 | Acc: 0.78516
+INFO - 06/16/24 12:18:38 - 0:28:47 - Epoch	15
+INFO - 06/16/24 12:20:30 - 0:30:40 - Train Loss: 0.0001
+INFO - 06/16/24 12:20:30 - 0:30:40 - Val: Loss: 0.00105 | Acc: 0.99963
+INFO - 06/16/24 12:20:39 - 0:30:49 - Test: Loss: 1.35036 | Acc: 0.78516
+INFO - 06/16/24 12:20:41 - 0:30:50 - Epoch	16
+INFO - 06/16/24 12:22:33 - 0:32:42 - Train Loss: 0.0001
+INFO - 06/16/24 12:22:33 - 0:32:42 - Val: Loss: 0.00104 | Acc: 0.99963
+INFO - 06/16/24 12:22:42 - 0:32:52 - Test: Loss: 1.35174 | Acc: 0.78460
+INFO - 06/16/24 12:22:44 - 0:32:53 - No improvement. Breaking out of loop.
