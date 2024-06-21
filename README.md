@@ -34,4 +34,14 @@ python train.py --batch_sz 32 --gradient_accumulation_steps 40 \
 ```
 
 ## 结果
+Fakeddit  
+<img src="https://github.com/Preciousrs/MTTV/blob/main/fakeddit.png" width="800" height="300" />  
+微博  
+<img src="https://github.com/Preciousrs/MTTV/blob/main/weibo.png" width="800" height="300" />  
+Style-based Fake  
+<img src="https://github.com/Preciousrs/MTTV/blob/main/Style-based%20Fake.png" width="800" height="300" />  
+
+
+
+
 
